@@ -1,0 +1,21 @@
+{{! 最新文章 }}
+<div class="widget widget-tag-cloud">
+	<div class="widget-title">
+		<div class="widget-title-meta">
+			<i class="fa fa-tags"></i>&nbsp;
+			<span class="title-meta-word">最新/热门推荐</span>
+		</div>
+	</div>
+	<div class="tag-cloud-content">
+		{{! Tag Cloud }}
+		{{#get "posts" limit="10" order="published_at desc" }}
+			<ul>
+				{{#foreach posts}}
+					<li><a href="{{url}}" class="tag-item">{{title}}</a></li>
+				{{/foreach}}
+			</ul>
+		{{/get}}
+	</div>
+</div>
+
+

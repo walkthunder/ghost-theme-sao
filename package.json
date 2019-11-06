@@ -1,0 +1,31 @@
+{
+    "name": "sao",
+    "description": "A Simple And Elegant Ghost Theme",
+    "version": "1.0.1",
+    "author": {
+        "name": "CN-Sean",
+        "email": "wenwu.shao@qq.com",
+        "url": "https://github.com/CN-Sean"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/CN-Sean/ghost-theme-sao.git"
+    },
+    "bugs": {
+        "url": "https://github.com/CN-Sean/ghost-theme-sao/issues"
+    },
+    "keywords": [
+        "simple",
+        "elegant",
+        "ghost",
+        "theme"
+    ],
+    "engines": {
+        "ghost": ">=1.0.0",
+        "node": ">= 6"
+    },
+    "license": "MIT",
+    "config": {
+        "posts_per_page": 10
+    }
+}

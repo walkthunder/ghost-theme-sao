@@ -1,0 +1,17 @@
+<section class="post comments">
+    <div id="comment-container"></div>
+    <link rel="stylesheet" href="{{asset "plugins/gitment/gitment.default.css"}}">
+    <script src="{{asset "plugins/gitment/gitment.browser.js"}}"></script>
+    <script>
+        var gitment = new Gitment({
+            id: '{{slug}}', // 可选。默认为 location.href
+            owner: 'CN-Sean',
+            repo: 'ghost-theme-sao',
+            oauth: {
+                client_id: '46ca9df28bdb36766bba',
+                client_secret: 'b6f140eeb53f650c9fb3d8cc782dc9cf5cb9a9f8'
+            }
+        });
+        gitment.render('comment-container');
+    </script>
+</section>

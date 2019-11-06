@@ -1,0 +1,23 @@
+{{! 站点信息 }}
+<div class="widget widget-profile">
+    <div class="widget-profile-cover overlay {{#if @site.cover_image}}" style="background-image: url({{@site.cover_image}}){{else}}no-cover{{/if}}"></div>
+    <div class="widget-profile-header">
+        <a class="widget-profile-logo" href="{{@site.url}}">
+            {{#if @site.logo}}
+                <img src="{{@site.logo}}" alt="{{@site.title}}" />
+            {{else}}
+                <img src="{{asset "img/user-image.png"}}" alt="{{@site.title}}" />
+            {{/if}}
+        </a>
+    </div>
+    <span class="widget-profile-title">{{@site.title}}</span>
+    <hr>
+    <p class="widget-profile-desc">
+        {{#if @site.description}}
+            {{@site.description}}
+        {{else}}
+            <em><a href="{{@site.url}}/ghost/settings/general/">(添加站点描述)</a></em>
+        {{/if}}
+    </p>
+    <hr> {{> "site_stat"}}
+</div>
