@@ -27,5 +27,19 @@
     "license": "MIT",
     "config": {
         "posts_per_page": 10
+    },
+    "scripts": {
+        "build": "rm -rf ./dist/* && gulp"
+    },
+    "devDependencies": {
+        "copy-dir": "^1.2.0",
+        "csso": "^4.0.2",
+        "gulp-less": "^4.0.1",
+        "gulp-minify-css": "^1.2.4",
+        "gulp-zip": "^5.0.1",
+        "less": "^3.10.3"
+    },
+    "dependencies": {
+        "gulp": "^3.9.1"
     }
 }

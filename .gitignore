@@ -34,3 +34,6 @@ Temporary Items
 .apdisk
 config.codekit
 .idea/*
+
+dist/
+node_modules/
